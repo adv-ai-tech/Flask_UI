@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>ADVAIT LABS</title>
+</head>
+<body>
+    <center>
+        <h1>INTELLIGENT SECURITY SYSTEMS</h1>
+    </center>
+    <table border="5" bordercolor="red" align="center">
+        <tr>
+            <th colspan="3">Security Cam No : 32</th> 
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Time</th>
+            <th>Photo</th>
+        </tr>
+        {% for image in images %}
+        <tr>
+            <td>Name</td>
+            <td>Time, Date</td>
+                    <!-- considering it is on the same folder that .html file -->
+            <td><a class="image" href="{{ image.src }}" >
+        <img src="{{ image.src }}" data-src="{{ image.src }}" height="64" width="64"/></a>
+				
+        </tr>
+        {% endfor %}
+<!--
+        
+        <tr>
+            <td>SSC Ultimate Aero TT  TopSpeed</td>
+            <td>United States</td>
+            <td border=3 height=100 width=100>Photo1</td>
+        </tr>
+        <tr>
+            <td>Koenigsegg CCX</td>
+            <td>Ängelholm, Sweden</td>
+            <td border=4 height=100 width=300>Photo1</td>
+        </tr>
+        <tr>
+            <td>Saleen S7</td>
+            <td>Irvine, California, United States</td>
+            <td border=3 height=100 width=100>Photo1</td>
+        </tr>
+        <tr>
+            <td> McLaren F1</td>
+            <td>Surrey, England</td>
+            <td border=3 height=100 width=100>Photo1</td>
+        </tr>
+        <tr>
+            <td>Ferrari Enzo</td>
+            <td>Maranello, Italy</td>
+            <td border=3 height=100 width=100>Photo1</td>
+        </tr>
+        <tr>
+            <td> Pagani Zonda F Clubsport</td>
+            <td>Modena, Italy</td>
+            <td border=3 height=100 width=100>Photo1</td>
+        </tr>
+-->
+    </table>
+</body>
+<html>
